@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   View,
   Text,
@@ -18,6 +18,12 @@ export const ImageScreen = ({navigation, route}: any) => {
   const isLiked = useSelector(photoSelectors.liked)?.some(
     photo => photo.id === image.id,
   );
+
+  useEffect(() => {
+    navigation.setOptions({
+      headerTitle: image.author,
+    });
+  }, [image.author, navigation]);
 
   return (
     <SafeAreaView style={styles.container}>
