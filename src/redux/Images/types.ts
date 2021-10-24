@@ -1,0 +1,5 @@
+export const GET_IMAGES_START = 'GET_IMAGES_START';
+export const GET_IMAGES_SUCCESS = 'GET_IMAGES_SUCCESS';
+export const SET_LOADING = 'SET_LOADING';
+export const TOGGLE_LIKE = 'TOGGLE_LIKE';
+export const REMOVE_PHOTO = 'REMOVE_PHOTO';
